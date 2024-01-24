@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="xiaoli">
+
+    <title>SleepAudio-Child Demo Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="./css/fontawesome.all.min.css">
+	
+	<script defer src="./js/fontawesome.all.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+	<!-- Custom scripts for this template -->
+	<script src="js/clean-blog.js"></script>
+	<script src="js/interp.js"></script>
+
+    <style>
+        .vertical-align {
+            vertical-align: middle;
+            text-align: center;
+        }
+        .audio-player {
+            width: 100%; /* Adjust as needed */
+        }
+        .image-cell img {
+            max-width: 100%; /* Makes image responsive */
+            height: auto;    /* Maintains aspect ratio */
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">SleepAudio-Child</a>
+			<button class="navbar-toggler navbar-toggler-right font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#abstract">Abstract</a>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#pure-breath">Pure Breathing</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#snoring">Snoring</a></li>
+					<!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#u2s">Unseen-to-Seen</a></li>
+					<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#u2u">Unseen-to-Unseen</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+        <div class="container" style="padding-bottom:10px">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Audio Demo</h1>
+                        <span class="subheading">
+                            SleepAudio-Child: A Breathing Sound Dataset for Early Detection and Intervention of Pediatric Obstructive Sleep Apnea
+                        </span>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-14 col-md-12 mx-auto">
+                <div class="post-preview" id="abstract">
+                    <h2 class="post-title">
+                        Abstract
+                    </h2>
+                    <p>
+                        Pediatric Obstructive Sleep Apnea-Hypopnea Syndrome (P-OSAHS) can lead to exhibiting cognitive deficits and growth failure if not diagnosed and treated earlier. However, there are significant challenges in diagnosing P-OSAHS using snoring alone, as a proportion of P-OSAHS patients make noisy breathing sounds rather than snoring. In this paper, we introduce the SleepAudio-Child dataset, which includes snoring and breathing sounds relevant to diagnosing OSAHS in children. The dataset comprises 2813 breathing recordings, annotated with 5 labels reflecting all the respiratory events: hypopnea-related breathing, obstructive apnea-related breathing, central apnea-related breathing, mixed apnea-related breathing and normal breathing. The SleepAudio-Child dataset aims to provide comprehensive labeling data for diagnosing OSAHS in children, making it clinically applicable. Our dataset will be available when the applicant submits a formal document.
+					</p>
+                </div>
+				
+							
+				
+                <div class="post-preview">
+                    <h2 class="post-title">
+                        SleepAudio-Child
+                    </h2>
+                    <h3 class="post-meta" id="pure-breath">
+                        Pure Breathing
+                    </h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="centered-content">Labels</th>
+                                <th scope="col" class="centered-content">Wav</th>
+                                <th scope="col" class="centered-content">Time Waveform</th>
+                                <th scope="col" class="centered-content">Log Mel Spectrogram</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!-- 文字Label -->
+                                <td class="centered-content">Hy-related</td>
+                                <!-- 音频文件 -->
+                                <td class="centered-content">
+                                    <audio controls>
+                                        <source src="data/pure-breath/h0.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <!-- 时域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/h0_waveform.png" alt="Time Domain Waveform">
+                                </td>
+                                <!-- 频域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/h0_mel.png" alt="Frequency Domain Waveform">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <!-- 文字Label -->
+                                <td class="centered-content">OA-related</td>
+                                <!-- 音频文件 -->
+                                <td class="centered-content">
+                                    <audio controls>
+                                        <source src="data/pure-breath/oa0.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <!-- 时域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/oa0_waveform.png" alt="Time Domain Waveform">
+                                </td>
+                                <!-- 频域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/oa0_mel.png" alt="Frequency Domain Waveform">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <!-- 文字Label -->
+                                <td class="centered-content">CA-related</td>
+                                <!-- 音频文件 -->
+                                <td class="centered-content">
+                                    <audio controls>
+                                        <source src="data/pure-breath/ca0.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <!-- 时域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/ca0_waveform.png" alt="Time Domain Waveform">
+                                </td>
+                                <!-- 频域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/ca0_mel.png" alt="Frequency Domain Waveform">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <!-- 文字Label -->
+                                <td class="centered-content">MA-related</td>
+                                <!-- 音频文件 -->
+                                <td class="centered-content">
+                                    <audio controls>
+                                        <source src="data/pure-breath/ma0.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <!-- 时域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/ma0_waveform.png" alt="Time Domain Waveform">
+                                </td>
+                                <!-- 频域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/ma0_mel.png" alt="Frequency Domain Waveform">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <!-- 文字Label -->
+                                <td class="centered-content">Normal</td>
+                                <!-- 音频文件 -->
+                                <td class="centered-content">
+                                    <audio controls>
+                                        <source src="data/pure-breath/n0.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </td>
+                                <!-- 时域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/n0_waveform.png" alt="Time Domain Waveform">
+                                </td>
+                                <!-- 频域波形图 -->
+                                <td class="centered-content image-cell">
+                                    <img src="data/pure-breath/n0_mel.png" alt="Frequency Domain Waveform">
+                                </td>
+                            </tr>
+
+
+                            
+                        </tbody>
+                    </table>
+                    <h3 class="post-meta" id="snoring">
+                        Snoring
+                    </h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="centered-content">Labels</th>
+                                <th scope="col" class="centered-content">Wav</th>
+                                <th scope="col" class="centered-content">Time Waveform</th>
+                                <th scope="col" class="centered-content">Log Mel Spectrogram</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <!-- 文字Label -->
+                            <td class="centered-content">Hy-related</td>
+                            <!-- 音频文件 -->
+                            <td class="centered-content">
+                                <audio controls>
+                                    <source src="data/snoring/h1.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                            <!-- 时域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/h1_waveform.png" alt="Time Domain Waveform">
+                            </td>
+                            <!-- 频域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/h1_mel.png" alt="Frequency Domain Waveform">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!-- 文字Label -->
+                            <td class="centered-content">OA-related</td>
+                            <!-- 音频文件 -->
+                            <td class="centered-content">
+                                <audio controls>
+                                    <source src="data/snoring/oa1.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                            <!-- 时域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/oa1_waveform.png" alt="Time Domain Waveform">
+                            </td>
+                            <!-- 频域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/oa1_mel.png" alt="Frequency Domain Waveform">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!-- 文字Label -->
+                            <td class="centered-content">CA-related</td>
+                            <!-- 音频文件 -->
+                            <td class="centered-content">
+                                <audio controls>
+                                    <source src="data/snoring/ca1.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                            <!-- 时域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/ca1_waveform.png" alt="Time Domain Waveform">
+                            </td>
+                            <!-- 频域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/ca1_mel.png" alt="Frequency Domain Waveform">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!-- 文字Label -->
+                            <td class="centered-content">MA-related</td>
+                            <!-- 音频文件 -->
+                            <td class="centered-content">
+                                <audio controls>
+                                    <source src="data/snoring/ma1.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                            <!-- 时域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/ma1_waveform.png" alt="Time Domain Waveform">
+                            </td>
+                            <!-- 频域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/ma1_mel.png" alt="Frequency Domain Waveform">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!-- 文字Label -->
+                            <td class="centered-content">Normal</td>
+                            <!-- 音频文件 -->
+                            <td class="centered-content">
+                                <audio controls>
+                                    <source src="data/snoring/n1.wav" type="audio/wav">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </td>
+                            <!-- 时域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/n1_waveform.png" alt="Time Domain Waveform">
+                            </td>
+                            <!-- 频域波形图 -->
+                            <td class="centered-content image-cell">
+                                <img src="data/snoring/n1_mel.png" alt="Frequency Domain Waveform">
+                            </td>
+                        </tr>
+                            
+                                
+                    
+			
+                    
+					
+                    
+
+				
+	
+
+				
+            </div>
+            
+        </div>
+		</div>
+        
+
+
+</body>
+
+</html>
